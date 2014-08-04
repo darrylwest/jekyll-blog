@@ -15,3 +15,5 @@ The project is published to the npm registry and can be installed using this:
 	npm install simple-node-db
 	
 The project includes a full suite of unit tests and examples.  If you get a chance to try it out, let me know what you think.  For more info on leveldb, check out [this video](http://www.infoq.com/presentations/leveldb-nodejs) from Richard Astbury.
+
+- - -

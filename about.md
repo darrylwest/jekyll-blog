@@ -29,12 +29,23 @@ Summary of programming languages include Javascript, Java, Swing, REST, XML/SOAP
 
 ## Photography
 
-Serious amature...
+I'm an amature.  But I love photography and image processing.  And thanks to the mentoring of my amazing Berkeley neighbor Daniel Moore I'm actually able to get some good shoots.   If you're interested, visit [my flickr site](https://www.flickr.com/photos/darrylwest/sets/) to see some of my work.  Here's a small sample...
 
-![sasha](../images/sasha-sparkle.jpg)
+> Sasha on a windy day...
+![sasha](../images/sasha-windy-b+w.jpg)
+
+> Pirate Sunset...
+![pirate](../images/pirate-sunset.jpg)
+
+> Bay Bridge Fog...
+![bay bridge](../images/bay-bridge-fog.jpg)
+
+> Bay Flight...
+![bay flight](../images/bay-flight.jpg)
 
 ## Cirrus Pilot
 
+I was lucky enough to be able to fly our small SR20 all across the US from Duluth to Seattle, down to Portland, and eventually to the Bay Area.  Being an instrument rated pilot gave me the opportunity to fly and see places on the Oregon and California coast, Arizona, Grand Canyon, Utah, and New Mexico.  Great fun.
 
 ### Contact me
 

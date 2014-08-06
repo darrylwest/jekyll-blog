@@ -32,16 +32,16 @@ Summary of programming languages include Javascript, Java, Swing, REST, XML/SOAP
 I'm an amature.  But I love photography and image processing.  And thanks to the mentoring of my amazing Berkeley neighbor Daniel Moore I'm actually able to get some good shoots.   If you're interested, visit [my flickr site](https://www.flickr.com/photos/darrylwest/sets/) to see some of my work.  Here's a small sample...
 
 > Sasha on a windy day...
-![sasha](../images/sasha-windy-b+w.jpg)
+![sasha]({{ site.url }}/images/sasha-windy-b+w.jpg)
 
 > Pirate Sunset...
-![pirate](../images/pirate-sunset.jpg)
+![pirate]({{ site.url }}/images/pirate-sunset.jpg)
 
 > Bay Bridge Fog...
-![bay bridge](../images/bay-bridge-fog.jpg)
+![bay bridge]({{ site.url }}/images/bay-bridge-fog.jpg)
 
 > Bay Flight...
-![bay flight](../images/bay-flight.jpg)
+![bay flight]({{ site.url }}/images/bay-flight.jpg)
 
 ## Cirrus Pilot
 

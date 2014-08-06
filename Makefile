@@ -1,6 +1,6 @@
 
 all:
-	@make watch
+	@make build
 
 clean:
 	@( /bin/rm -fr _site/* )
@@ -13,7 +13,6 @@ watch:
 	@( jekyll serve --watch )
 
 deploy:
-	@( /bin/rm -f _site/Makefile )
 	( cd _site ; rsync -aruv * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )
 
 .PHONY:	clean

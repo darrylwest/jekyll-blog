@@ -13,9 +13,8 @@ watch:
 	@( jekyll serve --watch )
 
 deploy:
-	@( make clean )
-	@( rm _site/Makefile _sige/CNAME )
-	( cd _site ; rsync -arvu * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )
+	@( /bin/rm -f _site/Makefile )
+	( cd _site ; rsync -aruv * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )
 
 .PHONY:	clean
 .PHONY:	build

@@ -2,14 +2,14 @@
 layout: post
 title: A Node Production Logger
 ---
-What started out as a simple node logger to replace more heavy-weight loggers has become our standard logger for simple scripts as well as production servers.  And as of version 0.91.84, with the ability to log domain, category, and levels we will begin using this logger even for clustered applications. 
+What started out as a simple node logger to replace more heavy-weight loggers has become our standard logger for simple scripts as well as production servers.  And as of version 0.91.90, with the ability to log domain, category, and levels we will begin using this logger even for clustered applications. 
 
 This multi-level logger can easily write to console, file, or rolling files.  Some of the features include:
 
 - levels: trace, debug, info, warn, error and fatal levels (plus all and off)
 - flexible appender/formatters with default to HH:MM:ss.SSS LEVEL message
 - add appenders to send output to console, file, etc
-- change log levels on the fly
+- dynamically change log levels for appenders and loggers on the fly
 - domain and category columns
 - overridable format methods in base appender
 
@@ -85,19 +85,22 @@ If you create a logger with a category name, all log statements will include thi
 
 ### Domain Logger
 
-For multi-service or clustered loggers, you will want to spearate log statements by domain. For this you would set up a configuration script (e.g., conf.js) to specify domain, category, and other options.  You main also want your application to re-read the configuration file periodically during run-time to modify parameters, probably the log level.
+For multi-service or clustered loggers, you will want to spearate log statements by domain. For this you would set up a configuration script (e.g., conf.js) to specify domain, category, and other options.  You main also want your application to re-read the configuration file periodically during run-time to modify  the appender or logger log level.
 
 Here is what the configuration file would look like:
 
 ~~~
 	'use strict';
 	
+	var port = 18344;
+	
 	module.exports.readLoggerConfig = function() {
 		var config = {
 			logDirectory: process.env.HOME + '/logs',
-			filenamePattern: 'client-app-<date>.log,
+			filenamePattern: ['client-', port, '-<date>.log' ].join(''),
 			domain: 'MyAwsomeApplication',
-			refresh: 120, // re-read each 2 minutes
+			refresh: 30 * 1000, // re-read each 30 seconds,
+			loggerConfigFile: __dirname + '/logger-config.json',
 			level: 'warn'
 		};
 		
@@ -106,6 +109,38 @@ Here is what the configuration file would look like:
 	
 ~~~
 
+The logger configuration file would look something like this:
+
+~~~
+{
+    "appenders":[ 
+        {
+            "typeName":"RollingFileAppender",
+            "level":"debug"
+        },
+        {
+            "typeName":"ConsoleAppender",
+            "level":"fatal"
+        }
+    ],
+    "loggers":[
+        {
+            "category":"all",
+            "level":"info"
+        },
+        {
+            "category":"ApplicationFactory",
+            "level":"warn"
+        },
+        {
+            "category":"CalculatorDelegate",
+            "level":"debug"
+        }
+    ]
+}
+~~~
+
+Since the config file is read and parsed each 30 seconds, it's easy to change the appender or logger levels to what ever is appropriate.  With the above file, the rolling file appender would be set to debug, then all loggers set to info, then the ApplicationFactory logger set to warn and the CalculatorDelegate set to debug.  Modifying the file once again, you could change the appender level to warn and only the warn, error and fatal messages would be written.
  
 ## Appenders
 

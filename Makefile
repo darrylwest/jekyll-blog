@@ -10,7 +10,7 @@ build:
 	@( jekyll build )
 
 watch:
-	@( jekyll serve --watch )
+	@( jekyll serve --watch --drafts )
 
 deploy:
 	( cd _site ; rsync -aruv * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )

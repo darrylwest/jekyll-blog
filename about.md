@@ -47,8 +47,12 @@ I'm an amature.  But I love photography and image processing.  And thanks to the
 
 I was lucky enough to be able to fly our small SR20 all across the US from Duluth to Seattle, down to Portland, and eventually to the Bay Area.  Being an instrument rated pilot gave me the opportunity to fly and see places on the Oregon and California coast, Arizona, Grand Canyon, Utah, and New Mexico.  Great fun.
 
-### Contact me
+## Contact me
 
-[darryl.west@raincitysoftware.com](mailto:darryl.west@raincitysoftware.com) | skype: cirruspilot
+[darryl.west@raincitysoftware.com](mailto:darryl.west@raincitysoftware.com) \| skype: cirruspilot \| twitter: @cirrus1426c
+
+~~~
+
+~~~
 
 

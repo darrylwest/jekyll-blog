@@ -3,9 +3,9 @@ layout: page
 title: About
 ---
 
-I am currently working as Director of Engineering for Roundpeg.  I manage a small international group of software engineers working on custom web applications.  My duties include software architecture, team management, and implementation of customer facing web solutions for mobile and desktop users.  Our current projects specialize in medical publication and learning management systems for on-line education but also include web applications for real-time control applications (my roots).
+I am currently Director of Engineering for Roundpeg.  I manage a small international group of software engineers working on custom web applications.  My duties include software architecture, team management, and implementation of customer facing web solutions for mobile and desktop users.  Our projects specialize in medical publication and learning management systems for on-line education but also include web applications for real-time control applications (my roots).
 
-Our current technologies include javascript for single-page client applications targeted for mobile and desktop.  We use REST and socket technologies to commuicate with our backend services, currently written in node.  Prior to 2014 our servers were written in groovy using embedded jetty as the web container but used the same REST data-exchange structure as our node projects.
+Our technologies include javascript for single-page client applications targeted for mobile and desktop.  We use REST and socket technologies to commuicate with our backend services written in node.  Prior to 2014 our servers were written in groovy using embedded jetty as the web container but used the same REST data-exchange structure as our node projects.
 
 All of our projects are hosted on Amazon using EC2 (centos 6), S3, SES, SQS and MySQL RDS for primary database.  We also use redis and leveldb for caching and temporary storage.  Our production servers are hosted behind Amazon's load balancers as well as cloud front for static file delivery.  Each EC2 server has a number of services running on various ports and reverse-proxied using haproxy.  
 

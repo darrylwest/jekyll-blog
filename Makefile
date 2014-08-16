@@ -13,7 +13,7 @@ watch:
 	@( jekyll serve --watch --drafts )
 
 deploy:
-	( cd _site ; rsync -aruv * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )
+	( cd _site ; rsync -aruv --delete * dpw@raincitysoftware.com:blog.raincitysoftware.com/ )
 
 .PHONY:	clean
 .PHONY:	build

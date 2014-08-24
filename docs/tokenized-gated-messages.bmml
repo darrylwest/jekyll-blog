@@ -72,22 +72,22 @@
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="13" controlTypeID="com.balsamiq.mockups::CallOut" x="31" y="348" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>3</text>
-      </controlProperties>
-    </control>
-    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="92" y="358" w="323" h="-1" measuredW="294" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>accept%20message%20and%20broadcast%20new%20token%20uuid-2</text>
-      </controlProperties>
-    </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::CallOut" x="254" y="403" w="-1" h="-1" measuredW="36" measuredH="39" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::CallOut" x="31" y="402" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
     </control>
-    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="308" y="412" w="275" h="-1" measuredW="243" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="85" y="412" w="428" h="-1" measuredW="399" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>server%20accepts%20client%20A%27s%20message%20and%20broadcast%20new%20token%20uuid-2</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::CallOut" x="254" y="358" w="-1" h="-1" measuredW="36" measuredH="39" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="301" y="367" w="275" h="-1" measuredW="243" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <text>client%20B%20sends%20message%20with%20token%20uuid-1</text>
       </controlProperties>
@@ -97,9 +97,9 @@
         <text>5</text>
       </controlProperties>
     </control>
-    <control controlID="21" controlTypeID="com.balsamiq.mockups::Label" x="85" y="466" w="346" h="-1" measuredW="317" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Label" x="85" y="466" w="346" h="-1" measuredW="341" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>message%20rejected%20from%20client%20B%2C%20reason%20%3D%20invald%20token</text>
+        <text>server%20rejects%20client%20B%27s%20message%2C%20reason%20%3D%20expired%20token</text>
       </controlProperties>
     </control>
     <control controlID="22" controlTypeID="com.balsamiq.mockups::CallOut" x="254" y="511" w="-1" h="-1" measuredW="36" measuredH="39" zOrder="19" locked="false" isInGroup="-1">

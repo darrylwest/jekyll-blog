@@ -3,7 +3,7 @@ layout: post
 title: Tokenized Gated Messaging
 ---
 
-My friend and colleague [David Flajoe](https://www.linkedin.com/in/davidflajole) introduced a concept of controlling incoming messages from mulitple clients with a shared, single use token.  The way it works is if multiple clients submit a message at the same or near the same time to a centralized hub, the first one with a valid token wins--the rest are rejected. New tokens are regenerated and broadcast as messages are accepted.  It's a way of gating competing messages to give credit to the first responder.  Or, Tokenized Gated Messaging.
+My friend and colleague [David Flajole](https://www.linkedin.com/in/davidflajole) introduced a concept of controlling incoming messages from mulitple clients with a shared, single use token.  The way it works is if multiple clients submit a message at the same or near the same time to a centralized hub, the first one with a valid token wins--the rest are rejected. New tokens are regenerated and broadcast as messages are accepted.  It's a way of gating competing messages to give credit to the first responder.  Or, Tokenized Gated Messaging.
 
 ## A simple example: Multi-user Bidding
 
@@ -24,8 +24,8 @@ Tokenized gating has other applications as well.  Short lived, single use tokens
 
 Where...
 
-- the session key is known to the host and client (not other clients), 
-- the access token is the current gating token, 
+- the session key is known to the host and client (not other clients),
+- the access token is the current gating token,
 - and the password entered by the user plus salt is encoded using some algorithm.
 
 The hash is transmitted to the access hub where a lookup is done to find the session and encoded password, based on user profile.  The server side then uses the same formula to generate a hash and compare to what was sent.  At the same time, a new access token is generated and broadcast to the group.
@@ -35,12 +35,14 @@ This application doesn't use gating as much as the short life of the broadcasted
 
 ## Websocket Implementation
 
-There is a websocket implementation of this on [github](https://github.com/darrylwest/websocket-access-service) based on [node messaging commons](https://github.com/darrylwest/node-messaging-commons).  To install and try out, just create a test project do this:
+There is a [websocket implementation](https://github.com/darrylwest/websocket-access-service) of this on github based on [node messaging commons](https://github.com/darrylwest/node-messaging-commons).  To install and try out, just create a test messaging project and do this:
 
 ~~~
 	npm install websocket-access-service --save
 ~~~
 
-It offers a alternative to standard request/response access methods.
+The module includes examples with a small JSON database of users to get you started.  
+
+The websocket access implementation offers a alternative to standard request/response access methods.
 
 

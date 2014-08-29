@@ -38,10 +38,10 @@ This application doesn't use gating as much as the short life of the broadcasted
 There is a [websocket implementation](https://github.com/darrylwest/websocket-access-service) of this on github based on [node messaging commons](https://github.com/darrylwest/node-messaging-commons).  To install and try out, just create a test messaging project and do this:
 
 ~~~
-	npm install websocket-access-service --save
+	git clone https://github.com/darrylwest/websocket-access-service.git
 ~~~
 
-The module includes examples with a small JSON database of users to get you started.  
+The module includes server side and browser examples with a small JSON database of users to get you started.  
 
 The websocket access implementation offers a alternative to standard request/response access methods.
 

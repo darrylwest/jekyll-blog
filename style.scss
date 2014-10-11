@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -64,6 +64,10 @@ h3 {
 h4 {  
   font-size: 18px;
   color: $gray;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 p {
@@ -263,8 +267,8 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+    font-style: oblique;
+    font-size: 14px;
   }
 }
 

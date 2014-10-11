@@ -10,3 +10,8 @@ While making the move we found it difficult to continue using phantomjs for unit
 So we made the choice to not access these globals directly but instead to create a single object with with accessor methods to get document, window, location, etc.  This made it possible to create a mock browser object to pass to all classes for testing.
 
 The mock project is ...
+
+* based on jsdom project
+* added mock storage
+* added abstract browser for inheritable browser API
+

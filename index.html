@@ -8,17 +8,11 @@ layout: default
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <!--
-      <h6>
-        Written {{ post.date | date: "%B %e" }}
-      </h6>
-      -->
-
       <div class="entry">
         {{ post.content | truncatewords:40}}
       </div>
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">created {{ post.date | date: "%B %e" }}, read more...</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">created {{ post.date | date: "%B %e, %Y" }}; read more...</a>
     </article>
   {% endfor %}
 </div>

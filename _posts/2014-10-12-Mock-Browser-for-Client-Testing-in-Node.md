@@ -138,7 +138,7 @@ For run-time use you can extend AbstractBrowser to inherit the API.  This enable
 
     var MyBrowser = function(options) {
     	var browser = this,
-        	builder = options.componentBuilder;
+            builder = options.componentBuilder;
 
         // inherit getWindow(), getDocument(), getLocation(), getHistory(),
         // getLocalStorage(), getSessionStorage()
@@ -146,7 +146,7 @@ For run-time use you can extend AbstractBrowser to inherit the API.  This enable
 
         // my browser API extension...
         this.getComponentBuilder = function() {
-        	return builder;
+            return builder;
         };
     };
 ~~~

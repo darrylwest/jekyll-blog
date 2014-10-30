@@ -5,13 +5,13 @@ title: About
 
 I am currently Director of Engineering for Roundpeg.  I manage a small international group of software engineers working on custom web applications.  My duties include software architecture, team management, and implementation of customer facing web solutions for mobile and desktop users.  Our projects specialize in medical publication and learning management systems for on-line education but also include web applications for real-time control applications (my roots).
 
-Our technologies include javascript for single-page client applications targeted for mobile and desktop.  We use REST and socket technologies to commuicate with our backend services written in node.  Prior to 2014 our servers were written in groovy using embedded jetty as the web container but used the same REST data-exchange structure as our node projects.
+Our technologies include javascript for single-page client applications targeted for mobile and desktop.  We use REST and socket technologies to communicate with our backend services written in node.  Prior to 2014 our servers were written in groovy using embedded jetty as the web container but used the same REST data-exchange structure as our node projects.
 
 All of our projects are hosted on Amazon using EC2 (centos 6), S3, SES, SQS and MySQL RDS for primary database.  We also use redis and leveldb for caching and temporary storage.  Our production servers are hosted behind Amazon's load balancers as well as cloud front for static file delivery.  Each EC2 server has a number of services running on various ports and reverse-proxied using haproxy.  
 
 We use lightweight services based on node and embedded jetty allowing us to have many services running on a single machine (usually a small but sometimes micro instance).  Applications are easily scaled up to thousands of users by adding more EC2 instances behing the load balancer.  Scaling down is also as easy as switching off machines when loads are light.
 
-I also am responsibile for creating and publishing coding standards for our team.  These standards include frameworks for both client and server applications and unit/integration testing minimums.  Our documents cover javascript MVC client framework, node MVC server framework, groovy/jetty web container framework, and work-flow   expectations for git and subversion.  A common thread throughout all the frameworks is to prioritize unit and integration testing to insure high quality projects.  As of 2014, all of our projects require 100% test coverage.
+I also am responsible for creating and publishing coding standards for our team.  These standards include frameworks for both client and server applications and unit/integration testing minimums.  Our documents cover javascript MVC client framework, node MVC server framework, groovy/jetty web container framework, and work-flow   expectations for git and subversion.  A common thread throughout all the frameworks is to prioritize unit and integration testing to insure high quality projects.  As of 2014, all of our projects require 100% test coverage.
 
 ## Rain City Software
 
@@ -29,7 +29,7 @@ Summary of programming languages include Javascript, Java, Swing, REST, XML/SOAP
 
 ## Photography
 
-I'm an amature.  But I love photography and image processing.  And thanks to the mentoring of my amazing Berkeley neighbor Daniel Moore I'm actually able to get some good shoots.   If you're interested, visit [my flickr site](https://www.flickr.com/photos/darrylwest/sets/) to see some of my work.  Here's a small sample...
+I'm an amateur.  But I love photography and image processing.  And thanks to the mentoring of my amazing Berkeley neighbor Daniel Moore I'm actually able to get some good shoots.   If you're interested, visit [my flickr site](https://www.flickr.com/photos/darrylwest/sets/) to see some of my work.  Here's a small sample...
 
 > Sasha on a windy day...
 ![sasha]({{ site.url }}/images/sasha-windy-b+w.jpg)

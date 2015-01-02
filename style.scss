@@ -212,8 +212,8 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  float: left;
+  margin-top: 10px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
   font-size: 18px;
   
@@ -225,16 +225,23 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 3px;
     color: $darkGray;
-    text-align: right;
+    text-align: left;
     font-weight: 300;
     letter-spacing: 1px;
+    border: 1px dotted rgb(250, 250, 250);
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
+  }
+
+  a:hover {
+    border: 1px solid gray;
   }
 }
 

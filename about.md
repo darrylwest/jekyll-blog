@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I am currently Director of Engineering for Roundpeg.  I manage a small international group of software engineers working on custom web applications.  My duties include software architecture, team management, and implementation of customer facing web solutions for mobile and desktop users.  Our projects specialize in medical publication and learning management systems for on-line education but also include web applications for real-time control applications (my roots).
+I manage a small international team of software engineers working on custom web applications as Director of Engineering for Roundpeg, Inc.  My duties include software architecture, team management, and implementation of customer facing web solutions for mobile and desktop users.  Our projects specialize in medical publication and learning management systems for on-line education but also include web applications for real-time control applications (my roots).
 
 Our technologies include javascript for single-page client applications targeted for mobile and desktop.  We use REST and socket technologies to communicate with our backend services written in node.  Prior to 2014 our servers were written in groovy using embedded jetty as the web container but used the same REST data-exchange structure as our node projects.
 
